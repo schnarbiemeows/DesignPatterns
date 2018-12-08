@@ -10,7 +10,7 @@ public class AudioPlayer implements MediaPlayer {
 
 	@Override
 	public void play(String audioType, String fileName) {
-		// TODO Auto-generated method stub
+		
 		if (audioType.equals("mp3")) {
 			System.out.println("playing mp3 song : " + fileName);
 		} else if (audioType.equals("mp4")) {

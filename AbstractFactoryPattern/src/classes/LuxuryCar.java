@@ -9,7 +9,7 @@ public class LuxuryCar implements Car {
 
 	@Override
 	public String getCarType() {
-		// TODO Auto-generated method stub
+		
 		return type;
 	}
 

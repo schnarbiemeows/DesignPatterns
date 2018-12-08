@@ -41,7 +41,7 @@ public class Pitcher implements BaseBallPlayer {
 
 	@Override
 	public void warmTheBench() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Pitcher is warming the bench!");
 	}
 
