@@ -11,6 +11,7 @@ public class InterpreterPatternMain {
 	 * Behavioral Pattern
 	 * this pattern is used to define a grammatical representation for a language
 	 * and to provide an interpreter to deal with this language
+	 * this is the type of pattern that a compiler would use
 	 */
 	public static void main(String[] args) {
 		// the interpreter has translation methods

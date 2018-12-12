@@ -5,11 +5,17 @@ import interfaces.Iterator;
 
 public class PartRepository implements Container {
 
-	public String[] parts = {"watch","spring","sprocket","actuator","nut","bolt"};
+	String[] parts;
+	
+	public PartRepository(String[] parts) {
+		super();
+		this.parts = parts;
+	}
+
 	@Override
 	public Iterator getIterator() {
 		// TODO Auto-generated method stub
-		return null;
+		return new PartIterator(parts);
 	}
 
 }
