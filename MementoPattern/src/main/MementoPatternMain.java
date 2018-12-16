@@ -30,9 +30,9 @@ public class MementoPatternMain {
 		System.out.println("Current State: " + originator.getState().getId());
 
 		originator.getStateFromMemento(careTaker.get(0));
-		System.out.println("First saved State: " + originator.getState().getId());
+		System.out.println("First saved State: " + originator.getState().getId() + " , created on " + originator.getDateCreated());
 		originator.getStateFromMemento(careTaker.get(1));
-		System.out.println("Second saved State: " + originator.getState().getId());
+		System.out.println("Second saved State: " + originator.getState().getId() + " , created on " + originator.getDateCreated());
 
 	}
 
