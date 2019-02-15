@@ -1,0 +1,34 @@
+Definition of "S" in SOLID:
+Single Responsibility Principle(DIP):
+Every module, class or function should have responsibility over a single part of functionality of the
+overall program, and this functionality should be entirely encapsulted within the containing class.
+All of its services should be narrowly aligned with that responsibility. For example:
+My BusinessServicesFactory class handles the retrieval/processing of all data, but you could consider that
+too broad, and that should be broken up into separate classes for each call that just retrieve/process
+the data for that call.
+
+Definition of "O" in SOLID:
+Open/Closed : objects are open for extension, but closed for modification. This is the decorator pattern,
+and the File/Stream I/O interfaces exemplify this.
+ 
+Definition of "L" in SOLID:
+Liskov substitution principle (LSP): in a computer program, if S is a subtype of T, then objects of type T
+may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a
+subtype S) without altering any of the desirable properties of the program.
+
+Definition of "I" in SOLID:
+interface-segregation principle (ISP)
+Interfaces should be broken down into smaller and more specific ones so that clients only have access to
+the services that are of interest to them.
+
+Definition of "D" in SOLID:
+Dependency Inversion Principle(DIP):
+A. High-level modules should not depend on low-level modules. Both should depend on abstractions
+B. Abstractions should not depend on details. Details should depend on abstractions.
+Low-Level module: classes that are associated with data storage, and have no business logic
+High-level modules: modules that are closer to the end user, that provide business logic,
+and perform operations on low-level constructs  
+Let's say you have a Pojo with a list in it. The single responsibility of the Pojo is to
+manipulate the elements in the list. Let's say you have a higher levle module that want to get the
+list and filter it. Instead of calling the List getter() and filtering the results, The Pojo
+should have an interface, and should implement a filter(criteria) method in it that does the filtering
