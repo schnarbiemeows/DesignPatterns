@@ -4,10 +4,16 @@ import classes.Gear;
 import classes.TimexWatch;
 import interfaces.Watch;
 
+/**
+ * @author dylan
+ *
+ */
 public class WatchMain {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Watch myWatch = new TimexWatch();
 		myWatch.setPart(new Gear(1));
 		myWatch.setPart(new Gear(2));

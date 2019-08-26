@@ -1,12 +1,22 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class Jallopy implements Car {
 
 	private String type = "Jallopy";
+	/**
+	 * 
+	 */
 	public Jallopy() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
+	/* (non-Javadoc)
+	 * @see classes.Car#getCarType()
+	 */
 	@Override
 	public String getCarType() {
 		

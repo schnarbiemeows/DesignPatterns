@@ -1,9 +1,16 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class JapanFactory {
 
+	/**
+	 * 
+	 */
 	public JapanFactory() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Car getCar(String type) {

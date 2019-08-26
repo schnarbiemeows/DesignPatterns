@@ -1,12 +1,22 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class LuxuryCar implements Car {
 
 	private String type = "Luxury Car";
+	/**
+	 * 
+	 */
 	public LuxuryCar() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
+	/* (non-Javadoc)
+	 * @see classes.Car#getCarType()
+	 */
 	@Override
 	public String getCarType() {
 		

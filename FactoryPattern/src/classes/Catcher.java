@@ -1,11 +1,20 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class Catcher implements BaseBallPlayer {
 
 	private int heightInInches;
 	private float weight;
 	private float battingAverage;
-	
+
+	/**
+	 * @param heightInInches
+	 * @param weight
+	 * @param battingAverage
+	 */
 	public Catcher(int heightInInches, float weight, float battingAverage) {
 		super();
 		this.heightInInches = heightInInches;
@@ -14,7 +23,7 @@ public class Catcher implements BaseBallPlayer {
 	}
 
 	public Catcher() {
-		
+
 	}
 
 	@Override
@@ -49,9 +58,14 @@ public class Catcher implements BaseBallPlayer {
 		this.battingAverage = battingAverage;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see classes.BaseBallPlayer#warmTheBench()
+	 */
 	@Override
 	public void warmTheBench() {
-		
+
 		System.out.println("Catcher is warming the bench!");
 	}
 

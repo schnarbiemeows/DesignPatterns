@@ -1,8 +1,14 @@
 package interfaces;
 
-import java.util.Iterator;
-
+/**
+ * @author dylan
+ *
+ */
 public interface IObjectTest {
 
+	/**
+	 * @param o
+	 * @return
+	 */
 	public boolean test(Object o);
 }

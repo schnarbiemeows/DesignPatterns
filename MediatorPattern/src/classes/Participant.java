@@ -3,11 +3,17 @@ package classes;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author dylan
+ *
+ */
 public class Participant {
 
 	private String name;
-	
-	
+
+	/**
+	 * @param name
+	 */
 	public Participant(String name) {
 		super();
 		this.name = name;
@@ -30,5 +36,5 @@ public class Participant {
 	public void setMessages(List<String> messages) {
 		this.messages = messages;
 	}
-	
+
 }

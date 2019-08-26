@@ -1,15 +1,22 @@
 package classes;
 
-import java.util.Iterator;
-
 import interfaces.IObjectTest;
 
+/**
+ * @author dylan
+ *
+ */
 public class PersonTest implements IObjectTest {
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see interfaces.IObjectTest#test(java.lang.Object)
+	 */
 	public boolean test(Object o) {
-		// TODO Auto-generated method stub
-		Person p = (Person)o;
-		if(p.getGender().equals("female")) {
+		
+		Person p = (Person) o;
+		if (p.getGender().equals("female")) {
 			return true;
 		}
 		return false;

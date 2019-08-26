@@ -1,11 +1,23 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class CarFactory {
 
+	/**
+	 * 
+	 */
 	public CarFactory() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
+	/**
+	 * @param location
+	 * @param type
+	 * @return
+	 */
 	public Car orderCar(String location, String type) {
 		if(location==null) {
 			System.out.println("no factory specified!");

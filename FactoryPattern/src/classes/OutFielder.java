@@ -1,11 +1,20 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class OutFielder implements BaseBallPlayer {
 
 	private int heightInInches;
 	private float weight;
 	private float battingAverage;
-	
+
+	/**
+	 * @param heightInInches
+	 * @param weight
+	 * @param battingAverage
+	 */
 	public OutFielder(int heightInInches, float weight, float battingAverage) {
 		super();
 		this.heightInInches = heightInInches;
@@ -14,7 +23,7 @@ public class OutFielder implements BaseBallPlayer {
 	}
 
 	public OutFielder() {
-		
+
 	}
 
 	@Override
@@ -49,9 +58,14 @@ public class OutFielder implements BaseBallPlayer {
 		this.battingAverage = battingAverage;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see classes.BaseBallPlayer#warmTheBench()
+	 */
 	@Override
 	public void warmTheBench() {
-		
+
 		System.out.println("Outfielder is warming the bench!");
 	}
 }

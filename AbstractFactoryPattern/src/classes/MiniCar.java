@@ -1,12 +1,22 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class MiniCar implements Car {
 
 	private String type = "Mini Car";
+	/**
+	 * 
+	 */
 	public MiniCar() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
+	/* (non-Javadoc)
+	 * @see classes.Car#getCarType()
+	 */
 	@Override
 	public String getCarType() {
 		

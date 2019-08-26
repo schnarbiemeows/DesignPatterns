@@ -2,9 +2,16 @@ package classes;
 
 import interfaces.State;
 
+/**
+ * @author dylan
+ *
+ */
 public class StereoContext {
 	private State state;
 
+	/**
+	 * 
+	 */
 	public StereoContext() {
 		state = null;
 	}

@@ -3,11 +3,17 @@ package main;
 import classes.Car;
 import classes.CarFactory;
 
+/**
+ * @author dylan
+ *
+ */
 public class AbstractFactoryPatternMain {
 
-	/*
+	
+	/**
 	 * AbstractFactory pattern involves a double layer of the Factory pattern, in this case
 	 * a factory for the location, and a Factory for the car type
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		

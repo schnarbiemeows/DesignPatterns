@@ -4,16 +4,29 @@ import java.util.List;
 
 import interfaces.Criteria;
 
+/**
+ * @author dylan
+ *
+ */
 public class OrCriteria implements Criteria {
 
 	private Criteria criteria;
 	private Criteria otherCriteria;
 
+	/**
+	 * @param criteria
+	 * @param otherCriteria
+	 */
 	public OrCriteria(Criteria criteria, Criteria otherCriteria) {
 		this.criteria = criteria;
 		this.otherCriteria = otherCriteria;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see interfaces.Criteria#meetCriteria(java.util.List)
+	 */
 	@Override
 	public List<Person> meetCriteria(List<Person> persons) {
 		List<Person> firstCriteriaItems = criteria.meetCriteria(persons);

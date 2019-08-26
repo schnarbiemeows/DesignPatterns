@@ -3,15 +3,20 @@ package main;
 import classes.PartFactory;
 import interfaces.Part;
 
+/**
+ * @author dylan
+ *
+ */
 public class FlyweightPatternMain {
 
-	/*
-	 * Structural Pattern
-	 * primarily used to reduce the number of objects created and to decrease the 
-	 * memory footprint and increase performance.
+	/**
+	 * * Structural Pattern primarily used to reduce the number of objects created
+	 * and to decrease the memory footprint and increase performance.
+	 * 
+	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		PartFactory factory = new PartFactory();
 		Part part1 = factory.getPart("spring");
 		part1.assemble();

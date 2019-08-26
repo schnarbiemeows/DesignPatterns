@@ -3,11 +3,18 @@ package classes;
 import interfaces.AdvancedMediaPlayer;
 import interfaces.MediaPlayer;
 
+/**
+ * @author dylan
+ *
+ */
 public class MediaAdapter implements MediaPlayer {
 
 	// interface to the advanced media players
 	AdvancedMediaPlayer advancedMusicPlayer;
 
+	/**
+	 * @param audioType
+	 */
 	public MediaAdapter(String audioType) {
 
 		if (audioType.equalsIgnoreCase("vlc")) {
@@ -18,6 +25,11 @@ public class MediaAdapter implements MediaPlayer {
 		}
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see interfaces.MediaPlayer#play(java.lang.String, java.lang.String)
+	 */
 	@Override
 	public void play(String audioType, String fileName) {
 

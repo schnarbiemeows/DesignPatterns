@@ -1,7 +1,14 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class ChainPatternDemo {
 
+	/**
+	 * @return
+	 */
 	public static AbstractLogger getChainOfLoggers() {
 
 		AbstractLogger errorLogger = new ErrorLogger(AbstractLogger.ERROR);

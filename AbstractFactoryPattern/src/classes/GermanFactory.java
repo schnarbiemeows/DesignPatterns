@@ -1,11 +1,22 @@
 package classes;
 
+/**
+ * @author dylan
+ *
+ */
 public class GermanFactory {
 
+	/**
+	 * 
+	 */
 	public GermanFactory() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
+	/**
+	 * @param type
+	 * @return
+	 */
 	public Car getCar(String type) {
 		if(type==null) {
 			System.out.println("no type specified!");
